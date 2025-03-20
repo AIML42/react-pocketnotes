@@ -1,0 +1,129 @@
+.main-note-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    /* align-items: ce; */
+}
+
+.groups-section {
+    flex: 1;
+}
+
+.notes-section {
+    flex: 2;
+    background-color: #DAE5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.notes-section img {
+    height: 40%;
+    width: 70%;
+    object-fit: contain;
+}
+
+.notes-section .text-section {
+    text-align: center;
+    width: 55%;
+
+}
+
+.notes-section .text-section h4 {
+    color: #292929;
+}
+
+.groups-section {
+    position: relative;
+    padding-top: 18vh;
+
+}
+
+.groups-section h2 {
+    position: fixed;
+    top: 6vh;
+    left: 10%;
+}
+
+.groups-section .group-add-button {
+    position: fixed;
+    bottom: 6vh;
+    left: 22%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #16008B;
+    border: 1px solid #16008B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.groups-section button:after {
+    display: inline-block;
+    content: "\002b";
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.groups-section .encryption-message{
+    position:absolute;
+    bottom: 6vh;
+    left: 140%;
+    width: 30vw;
+    gap: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.groups-section .group-add-button:hover{
+
+    height: 60px;
+    width: 60px;
+    
+}
+
+
+@media (max-width:700px) {
+    .notes-section{
+        display: none;
+    }
+
+    .groups-section .encryption-message{
+        display: none;
+    }
+
+    .groups-section .group-add-button {
+        position: fixed;
+        bottom: 6vh;
+        left: 70%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #16008B;
+        border: 1px solid #16008B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .groups-section button:after {
+        display: inline-block;
+        content: "\002b";
+        color: #FFFFFF;
+        font-size: 25px;
+    }
+
+    .groups-section .group-add-button:hover{
+
+        height: 45px;
+        width: 45px;
+        
+    }
+}

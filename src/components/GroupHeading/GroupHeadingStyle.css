@@ -1,0 +1,49 @@
+.groups-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 4vh;
+    max-height: 82vh;
+    overflow-y: auto;
+    
+}
+
+.group-heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25vw;
+    gap: 2vw;
+    cursor: pointer;
+    border-radius:10px ;
+    padding: 1vw;
+}
+
+/* .group-heading:hover{
+    background-color: rgba(47, 47, 47,30%);
+} */
+
+.group-heading .group-dp{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.selected-group{
+    background-color: rgba(47, 47, 47,40%);
+}
+
+.group-dp h3{
+    color: #FFFFFF;
+}
+
+@media (max-width:700px) {
+    .group-heading{
+        width: 70vw;
+    }
+}

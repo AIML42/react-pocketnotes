@@ -1,0 +1,235 @@
+.create-group {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .create-group-section {
+    height: 40vh;
+    width: 40vw;
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .create-group-section h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .enter-group-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .enter-group-name .group-text-input {
+    border-radius: 10px;
+    border: 2px solid #CCCCCC;
+    height: 22px;
+    padding: 5px 10px;
+  }
+  
+  .choose-group-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+  }
+  
+  .choose-group-color h3 {
+    padding-right: 15px;
+  }
+  
+  .choose-group-color .color-one {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #B38BFA;
+  }
+  
+  .choose-group-color .color-two {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #FF79F2;
+  }
+  
+  .choose-group-color .color-three {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #43E6FC;
+  }
+  
+  .choose-group-color .color-four {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #F19576;
+  }
+  
+  .choose-group-color .color-five {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #0047FF;
+  }
+  
+  .choose-group-color .color-six {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #6691FF;
+  }
+  
+  .choose-group-color div:hover {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .choose-group-color .selected {
+    border: 2px solid #000;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .create-group-button, .cancel-button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid;
+    transition: padding 0.2s ease;
+  }
+  
+  .create-group-button {
+    background-color: #001F8B;
+    border-color: #001F8B;
+    color: #FFFFFF;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #000;
+  }
+  
+  .create-group-button:hover, .cancel-button:hover {
+    padding: 7px 18px;
+  }
+  
+  .create-group-button:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+
+
+  @media (max-width:700px) {
+    .create-group-section {
+      height: 40vh;
+      width: 70vw;
+      background-color: #FFFFFF;
+      border: 3px solid #FFFFFF;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 5px;
+    }
+
+    .create-group h2{
+      font-size: 1rem;
+    }
+
+    .create-group h3{
+      font-size: 0.8rem;
+    }
+
+
+    .choose-group-color .color-one {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .choose-group-color .color-two {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .choose-group-color .color-three {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .choose-group-color .color-four {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .choose-group-color .color-five {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .choose-group-color .color-six {
+      height: 20px;
+      width: 20px;
+    }
+
+    .choose-group-color .selected {
+      border: 1px solid #000;
+      height: 22px;
+      width: 22px;
+    }
+    
+    .error-message {
+      color: red;
+      font-size: 10px;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .enter-group-name .group-text-input {
+      border-radius: 5px;
+      border: 1px solid #CCCCCC;
+      height: 15px;
+      padding: 2px 4px;
+    }
+
+    .choose-group-color div:hover {
+      height: 25px;
+      width: 25px;
+    }
+  }

@@ -1,0 +1,107 @@
+.main-notes-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-notes-section .heading {
+    flex: 1;
+    background-color: #001F8B;
+}
+
+.main-notes-section .note-content {
+    flex: 7;
+    background-color: #DAE5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vh;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main-notes-section .add-new-note {
+    flex: 3;
+    background-color: #001F8B;
+    padding: 10px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-notes-section .add-new-note textarea {
+    width: 97%;
+    height: 85%;
+    
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    position:relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-notes-section .add-new-note button{
+    position: fixed;
+    bottom: 4vh;
+    right: 3%;
+    padding: 5px;
+    border: 0px;
+    background-color: #FFFFFF;
+}
+
+.group-heading .group-h3{
+    color: #FFFFFF
+}
+
+.note-content .note-content-area{
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.note-content .note-content-area .date-time{
+
+   display: flex;
+   justify-content: end;
+}
+
+.note-content .note-content-area h5{
+    font-weight: 400;
+}
+
+.go-back{
+    display: none;
+}
+
+
+@media (max-width:700px) {
+    .main-notes-section{
+        width: 100vw;
+    }
+
+    .main-notes-section .add-new-note button{
+        position: fixed;
+        bottom: 5vh;
+        right: 6%;
+        padding: 5px;
+        border: 0px;
+        background-color: #FFFFFF;
+    }
+
+    .go-back{
+        padding-left: 5px;
+        display: block;
+        background-color: #001F8B;
+        border: 1px solid #001F8B;
+    }
+}
